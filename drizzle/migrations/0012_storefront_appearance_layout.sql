@@ -1,0 +1,2 @@
+ALTER TABLE public.store_settings ADD COLUMN IF NOT EXISTS product_card_style text NOT NULL DEFAULT 'style-1' CHECK (product_card_style IN ('style-1', 'style-2'));
+ALTER TABLE public.store_settings ADD COLUMN IF NOT EXISTS public_sections jsonb NOT NULL DEFAULT '{}'::jsonb;

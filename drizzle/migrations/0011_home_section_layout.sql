@@ -1,0 +1,1 @@
+ALTER TABLE public.store_settings ADD COLUMN IF NOT EXISTS home_sections jsonb NOT NULL DEFAULT '[]'::jsonb;

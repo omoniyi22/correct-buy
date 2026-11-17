@@ -1,0 +1,9 @@
+[
+ {"capability":"code","source":"zip","outcome":"migrate","status":"verified","next_action":""},
+ {"capability":"schema","source":"drizzle migrations","outcome":"migrate","status":"verified","next_action":""},
+ {"capability":"records","source":"old Cloud database","outcome":"migrate","status":"pending","next_action":"Starter catalog loaded; real products/orders need an export"},
+ {"capability":"auth users","source":"old Cloud auth","outcome":"migrate","status":"pending","next_action":"Need users export; first sign-up becomes admin"},
+ {"capability":"paystack payments","source":"PAYSTACK_SECRET_KEY","outcome":"preserve","status":"pending","next_action":"Add secret; test payment page works until then"},
+ {"capability":"email (Resend)","source":"RESEND_API_KEY","outcome":"preserve","status":"pending","next_action":"Reconnect Resend"},
+ {"capability":"jobs tick schedule","source":"/api/public/jobs/tick","outcome":"preserve","status":"pending","next_action":"Recreate schedule after email is connected"}
+]

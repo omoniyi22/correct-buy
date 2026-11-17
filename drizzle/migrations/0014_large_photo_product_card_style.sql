@@ -1,0 +1,2 @@
+ALTER TABLE public.store_settings DROP CONSTRAINT IF EXISTS store_settings_product_card_style_check;
+ALTER TABLE public.store_settings ADD CONSTRAINT store_settings_product_card_style_check CHECK (product_card_style IN ('style-1', 'style-2', 'style-3'));
